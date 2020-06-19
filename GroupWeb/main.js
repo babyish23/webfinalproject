@@ -1,4 +1,3 @@
-
 function a(){
     $("#courseTable").empty();
     $("#courseTable").append(
