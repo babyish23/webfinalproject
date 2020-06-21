@@ -13,7 +13,7 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="MindQuiz/style.css">
+    <link rel="stylesheet" href="sharpGame/style.css">
     
     
   </head>
@@ -27,8 +27,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="random-select.html">RandomSelect</a>
@@ -36,18 +36,18 @@
             <li class="nav-item">
               <a class="nav-link" href="GroupWeb.html">GroupWeb</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="MindQuiz.html">MindQuiz <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="simpleRPG.html">simpleRPG</a>
+              <a class="nav-link" href="MindQuiz.html">MindQuiz</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="simpleRPG.html">simpleRPG <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="playList.html">playList</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sharp.html"># game</a>
-             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="sharp.html"># game</a>
+            </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -59,16 +59,43 @@
 
     <main role="main">
         <hr class="featurette-divider">
-
-        <body>
-            <h1>你的愛情是什麼滋味?</h1>
-            <div>
-                <h2 id="question"></h2>
-                <div id="options"></div>
-            </div>
-            <input id="startButton" type="button" value="開始作答">
-        </body>
-
+       <body onload="init()">
+        <table id="sharp" align="center" border="1">
+            <tr>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(0)" >
+                </td>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(1)" >
+                </td>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(2)" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(3)" >
+                </td>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(4)" >
+                </td>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(5)" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(6)" >
+                </td>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(7)" >
+                </td>
+                <td>
+                    <img alt="OX" src="sharpGame/blank.gif" onclick="num(8)" >
+                </td>
+            </tr>
+        </table>
+       </body>
         <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
@@ -87,8 +114,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="MindQuiz/data.js"></script>
-    <script src="MindQuiz/main.js"></script>
+    <script src="sharpGame/main.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
